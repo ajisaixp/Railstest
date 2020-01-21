@@ -10,6 +10,34 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+
+
+    @import "jquery-ui/core";
+    @import "jquery-ui/theme";
+    @import "jquery-ui/datepicker";
+
+    // for Bootstrap4
+    @import "bootstrap";
+
+    @import "bootstrap-select";
+
+    /* new 非表示*/
+    .display-none{
+        display:none;
+    }
+
+    /* select 触らせない */
+    .noselect {
+        user-select: none /* 選択を禁止する */
+    }
+
+    .bootstrap-date {
+        display: inline-block;
+        width: auto;
+    }
+
+    body {
+        font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    }

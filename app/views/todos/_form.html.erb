@@ -10,28 +10,31 @@
       </ul>
     </div>
   <% end %>
+  <div class="row justify-content-start">
+    <div class="col-md">
+      <div class="field">
+        <%= form.label :title , "タイトル", class:'control-label' %>
+        <%= form.text_field :title , class: 'form-control', :size=>"25" %>
+      </div>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
+      <div class="field">
+        <%= form.label :description , "説明", class:'control-label' %>
+        <%= form.text_area :description ,:class => 'form-control' ,:size => "40" ,autocomplete: 'off' %>
+      </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
+      <div class="field">
+        <%= form.label :status , "ステータス", class:'control-label' %>
+        <%= form.number_field :status , class: 'form-control', :size=>"25" %>
+      </div>
 
-  <div class="field">
-    <%= form.label :status %>
-    <%= form.number_field :status %>
-  </div>
+      <div class="field">
+        <%= form.label :estimatedDate , "時刻", class:'control-label' %><br/>
+        <%= form.time_select :estimatedDate ,{ :minute_step => 5, :time_separator => "" ,default: Date.today }, { class: "form-control time-select mb-3 bootstrap-date" } %>
+      </div>
 
-  <div class="field">
-    <%= form.label :estimatedDate %>
-    <%= form.datetime_select :estimatedDate %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+      <div class="actions">
+        <%= form.submit('保存',class: 'btn btn-primary btn-lg my-1 mb-3 px-3') %>
+      </div>
+    </div>
   </div>
 <% end %>
