@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    models:
+      todo: Todo
+    attributes:
+      medical_exam:
+        title: "タイトル"
+        description: "説明"
+        status: "ステータス"
+        estimatedDate: "時刻"

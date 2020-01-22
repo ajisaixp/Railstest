@@ -1,31 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Railstest</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11"/>
+    <title><%= content_for?(:title) ? yield(:title) : "gihubtest" %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <script type="text/javascript" src="javascripts\jquery-3.4.1.min.js"></script>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
-      <%= link_to "gittest todo", "#", id: "logo", class: "navbar-brand" %>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <%= link_to "TODOindex", todos_path , class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "TODOnew", new_todo_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Contents", "#", class: "nav-link" %>
-        </li>
-      </ul>
-    </nav>
-    <div class="container">
-      <%= yield %>
-    </div>
+
+      <%= content_for?(:content) ? yield(:content): yield %>
+
   </body>
 </html>
