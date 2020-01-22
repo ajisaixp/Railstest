@@ -1,9 +1,9 @@
 ja:
   activerecord:
     models:
-      todo: Todo
+      todo: "Todo"
     attributes:
-      medical_exam:
+      todo:
         title: "タイトル"
         description: "説明"
         status: "ステータス"

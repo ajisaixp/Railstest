@@ -42,3 +42,8 @@
         font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
         padding-top: 70px;
     }
+
+    div.field_with_errors {
+        background-color: #fcc;
+        padding: 2px;
+    }

@@ -68,7 +68,7 @@ gem 'rails-i18n'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-turbolinks'
-gem 'bootstrap', '~> 4.1.1'
+gem "bootstrap", ">= 4.3.1"
 gem 'bootstrap-select-rails'
 
 gem 'jquery-turbolinks'
